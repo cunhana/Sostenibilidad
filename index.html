@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economía Circular vs Economía Lineal - Transición hacia un Modelo Sostenible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a2e;
+            --secondary-color: #2d5a3d;
+            --accent-color: #4a7c59;
+            --text-dark: #1a1a1a;
+            --text-light: #6b7280;
+            --bg-warm: #faf9f7;
+            --bg-cream: #f7f5f3;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-warm) 0%, var(--bg-cream) 100%);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+        
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .question-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .citation {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .citation:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        .footer-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="serif-font text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Economía Circular vs Economía Lineal
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light">
+                    Transición hacia un Modelo Sostenible
+                </p>
+                <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-6 mb-8">
+                    <div class="grid md:grid-cols-3 gap-4 text-center">
+                        <div>
+                            <p class="text-sm opacity-80">Autor</p>
+                            <p class="text-lg font-semibold">Ana María da Cunha Gonçalves</p>
+                        </div>
+                        <div>
+                            <p class="text-sm opacity-80">Módulo</p>
+                            <p class="text-lg font-semibold">SASP</p>
+                        </div>
+                        <div>
+                            <p class="text-sm opacity-80">Tarea</p>
+                            <p class="text-lg font-semibold">1</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#content" class="inline-flex items-center bg-white text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                    Comenzar Análisis
+                    <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="content" class="py-8">
+        <div class="container mx-auto px-6">
+            
+            <!-- Introduction -->
+            <section class="content-section fade-in">
+                <h2 class="serif-font text-4xl font-bold section-title">Introducción</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg leading-relaxed mb-6">
+                            La transición hacia una economía circular representa una necesidad imperante para abordar los desafíos del siglo XXI. Este modelo no solo es ambientalmente necesario sino también económicamente viable, requiriendo la colaboración entre empresas, consumidores y administraciones públicas.
+                        </p>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                            <p class="text-green-800 font-medium">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                La educación y los incentivos económicos son claves fundamentales para superar las barreras existentes en esta transición.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="sustainability-comparison.png" alt="Comparación de sostenibilidad" class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity 1: Video Analysis -->
+            <section class="content-section fade-in">
+                <h2 class="serif-font text-4xl font-bold section-title">ACTIVIDAD 1: Análisis del Video "La Economía Circular en 4 Minutos"</h2>
+                
+                <!-- Question 1 -->
+                <div class="question-card">
+                    <h3 class="serif-font text-2xl font-bold mb-4 text-gray-800">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        Pregunta 1: Explicación de la Economía Circular y diferencias con la Economía Lineal
+                    </h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">
+                            Según el video de Pixtin, la <strong>economía circular</strong> es un modelo que busca replantear la cadena productiva pensando en todos los procesos de manera global, donde en cada fase se tienen en cuenta las siguientes etapas. Se caracteriza por:
+                        </p>
+                        <ul class="list-disc list-inside mb-4 space-y-2">
+                            <li>Producir mejor en lugar de producir mucho</li>
+                            <li>Ahorrar al máximo en materiales</li>
+                            <li>Idear formas de rentabilizar los residuos generados</li>
+                            <li>Pensar en cómo podrían reutilizarse los productos tras su vida útil</li>
+                        </ul>
+                        <p class="mb-4">
+                            En contraste, la <strong>economía lineal</strong> es un sistema económico pensado en "crear cosas para después tirarlas", donde cada proceso se rige exclusivamente por sus propios intereses y genera sus propios desechos.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Principales Diferencias:</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="font-semibold text-red-600">Economía Lineal</h5>
+                                    <ul class="text-sm space-y-1">
+                                        <li>• Produce mucho para vender mucho</li>
+                                        <li>• Depende de extracción continua</li>
+                                        <li>• Genera residuos como producto final</li>
+                                        <li>• Promueve obsolescencia programada</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-green-600">Economía Circular</h5>
+                                    <ul class="text-sm space-y-1">
+                                        <li>• Produce mejor y más eficiente</li>
+                                        <li>• Reutiliza y recicla materiales</li>
+                                        <li>• Convierte residuos en recursos</li>
+                                        <li>• Diseña productos duraderos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-card">
+                    <h3 class="serif-font text-2xl font-bold mb-4 text-gray-800">
+                        <i class="fas fa-chart-line text-green-600 mr-3"></i>
+                        Pregunta 2: Beneficios Económicos y Ambientales
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="benefit-icon">
+                                <i class="fas fa-euro-sign"></i>
+                            </div>
+                            <h4 class="font-bold text-center mb-3">Beneficios Económicos</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><strong>Reducción de costos:</strong> Las empresas reducen costos a través de reutilización y reciclaje de materiales</li>
+                                <li><strong>Ahorro energético:</strong> El gran ahorro material y energético se traduce en precios finales más bajos</li>
+                                <li><strong>Mayor competitividad:</strong> Las empresas sostenibles mejoran su posición en el mercado</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="benefit-icon bg-blue-600">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4 class="font-bold text-center mb-3">Beneficios Ambientales</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><strong>Reducción de extracción:</strong> Se podría reducir las extracciones en un 70%</li>
+                                <li><strong>Menor impacto ambiental:</strong> Minimiza la presión sobre ecosistemas y paisaje</li>
+                                <li><strong>Reducción de residuos:</strong> Se puede evitar el 90% de los residuos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-card">
+                    <h3 class="serif-font text-2xl font-bold mb-4 text-gray-800">
+                        <i class="fas fa-exclamation-triangle text-orange-600 mr-3"></i>
+                        Pregunta 3: Barreras y Soluciones
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold mb-3 text-red-600">Barrera Identificada</h4>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <p class="text-sm">
+                                    Los consumidores están obsesionados por tener siempre lo último y no se preocupan del origen ni del proceso de fabricación. Además, la mayoría de bienes no están pensados para ser recuperados.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-3 text-green-600">Solución Propuesta</h4>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <ul class="text-sm space-y-1">
+                                    <li>• <strong>Educación:</strong> Programas de concienciación ciudadana</li>
+                                    <li>• <strong>Incentivos:</strong> Sistemas que hagan más atractivo reparar que comprar</li>
+                                    <li>• <strong>Regulación:</strong> Normativas para productos reciclables</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-card">
+                    <h3 class="serif-font text-2xl font-bold mb-4 text-gray-800">
+                        <i class="fas fa-building text-purple-600 mr-3"></i>
+                        Pregunta 4: Empresas de Zaragoza con Criterios de Economía Circular
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2 text-purple-800">Grupo SAICA</h4>
+                            <p class="text-sm mb-2"><strong>Actividad:</strong> Empresa líder en papel y cartón</p>
+                            <p class="text-sm mb-2"><strong>Reconocimiento:</strong> Sello Aragón Circular (102,3/115 puntos)</p>
+                            <p class="text-sm"><strong>Objetivo:</strong> Implementar principios de circularidad en toda su gestión</p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2 text-indigo-800">AITIIP Centro Tecnológico</h4>
+                            <p class="text-sm mb-2"><strong>Actividad:</strong> I+D en materiales biobasados y reciclaje enzimático</p>
+                            <p class="text-sm mb-2"><strong>Enfoque:</strong> Transición verde y digital de la industria</p>
+                            <p class="text-sm"><strong>Innovación:</strong> Materiales biológicos como alternativa al petróleo</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity 2: Comparative Diagram -->
+            <section class="content-section fade-in">
+                <h2 class="serif-font text-4xl font-bold section-title">ACTIVIDAD 2: Esquema Gráfico Comparativo</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <!-- Linear Economy -->
+                    <div class="text-center">
+                        <h3 class="serif-font text-2xl font-bold mb-4 text-red-600">Economía Lineal</h3>
+                        <img src="linear-economy-diagram.png" alt="Diagrama Economía Lineal" class="w-full max-w-sm mx-auto mb-4 rounded-lg shadow-lg">
+                        <p class="text-sm text-gray-600">Flujo unidireccional: usar y tirar</p>
+                    </div>
+
+                    <!-- Circular Economy -->
+                    <div class="text-center">
+                        <h3 class="serif-font text-2xl font-bold mb-4 text-green-600">Economía Circular</h3>
+                        <img src="circular-economy-diagram.png" alt="Diagrama Economía Circular" class="w-full max-w-sm mx-auto mb-4 rounded-lg shadow-lg">
+                        <p class="text-sm text-gray-600">Ciclo cerrado: residuos como recursos</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+                    <h4 class="font-bold mb-3 text-blue-800">Características del Esquema Comparativo</h4>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <h5 class="font-semibold mb-2">Modelo Lineal (Izquierda)</h5>
+                            <ul class="space-y-1">
+                                <li>• Flujo unidireccional desde extracción hasta descarte</li>
+                                <li>• Proceso lineal y terminal</li>
+                                <li>• Generación de residuos como fin del ciclo</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold mb-2">Modelo Circular (Derecha)</h5>
+                            <ul class="space-y-1">
+                                <li>• Ciclo cerrado con retroalimentación continua</li>
+                                <li>• Residuos se convierten en recursos</li>
+                                <li>• Proceso regenerativo y sostenible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="content-section fade-in">
+                <h2 class="serif-font text-4xl font-bold section-title">Conclusión</h2>
+                <div class="prose max-w-none">
+                    <p class="text-lg leading-relaxed mb-4">
+                        La transición hacia una economía circular representa una necesidad imperante para abordar los desafíos del siglo XXI. Como demuestra el video de Pixtin y las empresas aragonesas pioneras en este campo, este modelo no solo es ambientalmente necesario sino también económicamente viable.
+                    </p>
+                    <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-green-500">
+                        <p class="font-semibold text-green-800 mb-2">
+                            <i class="fas fa-key mr-2"></i>
+                            Factores Clave para el Éxito:
+                        </p>
+                        <ul class="space-y-1 text-sm">
+                            <li>• Colaboración entre empresas, consumidores y administraciones públicas</li>
+                            <li>• Educación y concienciación ciudadana como base del cambio</li>
+                            <li>• Incentivos económicos para facilitar la transición</li>
+                            <li>• Regulación que promueva productos diseñados para la circularidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- References -->
+            <section class="content-section fade-in">
+                <h2 class="serif-font text-4xl font-bold section-title">Referencias</h2>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="space-y-2">
+                        <p>[1] <a href="https://naeco.com/es/actualidad/economia-lineal-vs-economia-circular/" class="citation">NAECO - Economía Lineal vs Economía Circular</a></p>
+                        <p>[2] <a href="https://naturklima.eus/hec-economia-circular-y-economia-lineal.htm" class="citation">Naturklima - Economía Circular y Lineal</a></p>
+                        <p>[3] <a href="https://professionalprograms.mit.edu/es/blog/sostenibilidad/economia-circular/" class="citation">MIT - Economía Circular</a></p>
+                        <p>[4] <a href="https://www.europarl.europa.eu/topics/es/article/20151201STO05603/economia-circular-definicion-importancia-y-beneficios" class="citation">Parlamento Europeo - Economía Circular</a></p>
+                        <p>[5] <a href="https://www.bsm.upf.edu/es/noticias/capsula-5-superar-obstaculos-para-implementacion-modelo-negocio-circular" class="citation">BSM UPF - Superar Obstáculos</a></p>
+                    </div>
+                    <div class="space-y-2">
+                        <p>[6] <a href="https://www.execyl.es/consejos-y-guias/la-economia-circular-y-las-cuatro-barreras-que-debe-superar/" class="citation">Execyl - Barreras de la Economía Circular</a></p>
+                        <p>[7] <a href="https://www.saica.com/es/noticias/el-grupo-saica-obtiene-el-sello-aragon-circular-como-la-empresa-mejor-valorada/" class="citation">Grupo SAICA - Sello Aragón Circular</a></p>
+                        <p>[8] <a href="https://www.aitiip.com/economia-circular.html" class="citation">AITIIP - Economía Circular</a></p>
+                        <p>[9] <a href="https://naturklima.eus/hec-ventajas-de-la-economia-circular.htm" class="citation">Naturklima - Ventajas de la Economía Circular</a></p>
+                        <p>[10] <a href="https://aeress.org/aragon-presenta-su-estrategia-de-economia-circular/" class="citation">AERESS - Estrategia Aragón Circular</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div>
+                    <p class="font-semibold">Autor</p>
+                    <p>Ana María da Cunha Gonçalves</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Institución</p>
+                    <p>Instituto Avempace</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Información Académica</p>
+                    <p>Curso 2025/2026</p>
+                    <p id="current-date"></p>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-600">
+                <p class="text-xs opacity-75">
+                    Trabajo académico sobre Economía Circular vs Economía Lineal - Transición hacia un Modelo Sostenible
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Set current date
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>académico sobre Economía Circular vs Economía Lineal - Transición hacia un Modelo Sostenible
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js background
+        VANTA.BIRDS({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x1e3a2e,
+            color1: 0x4a7c59,
+            color2: 0x2d5a3d,
+            birdSize: 1.20,
+            wingSpan: 25.00,
+            speedLimit: 3.00,
+            separation: 20.00,
+            alignment: 20.00,
+            cohesion: 20.00,
+            quantity: 3.00
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Set current date
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
