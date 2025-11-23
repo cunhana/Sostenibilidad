@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Medioambientales y ODS | Cuaderno Digital</title>
+    <!-- Tailwind CSS para diseño rápido y bonito -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f0fdf4; }
+        
+        /* Animaciones personalizadas */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Gradiente animado para el header */
+        .animated-bg {
+            background: linear-gradient(-45deg, #004d40, #00796b, #14b8a6, #059669);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- HERO SECTION / PORTADA -->
+    <header class="animated-bg text-white min-h-[60vh] flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <!-- Decoración de fondo -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <i class="fas fa-leaf text-9xl absolute top-10 left-10 animate-pulse"></i>
+            <i class="fas fa-globe-europe text-9xl absolute bottom-10 right-10 animate-bounce" style="animation-duration: 3s;"></i>
+        </div>
+
+        <div class="z-10 fade-in-section is-visible">
+            <span class="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold tracking-wider uppercase mb-4 inline-block backdrop-blur-sm">
+                Sostenibilidad aplicada al sistema productivo
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                Retos Medioambientales <br> & <span class="text-yellow-300">Objetivos ODS</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto opacity-90">
+                Un análisis de los desafíos globales y acciones locales para un futuro sostenible.
+            </p>
+            
+            <!-- Tarjeta de Estudiante -->
+            <div class="glass-card text-emerald-900 p-6 rounded-xl inline-flex flex-col md:flex-row items-center gap-4 shadow-lg">
+                <div class="bg-emerald-100 p-3 rounded-full">
+                    <i class="fas fa-user-graduate text-2xl text-emerald-600"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs uppercase text-emerald-600 font-bold">Alumno/a</p>
+                    <p class="font-bold text-lg">Ana Maria da Cunha Goncalves</p>
+                    <p class="text-sm text-gray-600"><i class="far fa-calendar-alt mr-1"></i> 23 Noviembre 2025</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Flecha para bajar -->
+        <a href="#actividad1" class="absolute bottom-5 animate-bounce text-white text-2xl cursor-pointer hover:text-yellow-300 transition">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- ACTIVIDAD 1: GRID DE TARJETAS -->
+    <section id="actividad1" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in-section">
+            <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">
+                <span class="border-b-4 border-emerald-500">Actividad 1:</span> Desafíos Globales
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Análisis de 8 retos críticos, sus objetivos de solución y noticias de actualidad (2024-2025).
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            
+            <!-- Card 1: Cambio Climático -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-red-500 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Cambio Climático</h3>
+                    <i class="fas fa-temperature-high text-red-500 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Variación global del clima por acción humana (GEI).
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Limitar +1.5°C</li>
+                        <li>Neutralidad 2050</li>
+                    </ul>
+                </div>
+                <a href="https://climate.copernicus.eu/copernicus-2024-first-year-exceed-15degc-above-pre-industrial-level" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Ver Noticia Copernicus
+                </a>
+            </div>
+
+            <!-- Card 2: Contaminación -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-gray-500 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Contaminación</h3>
+                    <i class="fas fa-smog text-gray-500 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Sustancias nocivas en aire, agua o suelo.
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Zonas Bajas Emisiones</li>
+                        <li>Menos plásticos</li>
+                    </ul>
+                </div>
+                <a href="https://www.ecologistasenaccion.org/342604/informe-calidad-del-aire-en-el-estado-espanol-2024/" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Informe Calidad Aire
+                </a>
+            </div>
+
+            <!-- Card 3: Residuos -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Gestión Residuos</h3>
+                    <i class="fas fa-recycle text-yellow-500 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Tratamiento de desechos priorizando economía circular.
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Vertido máx 10%</li>
+                        <li>Más reciclaje</li>
+                    </ul>
+                </div>
+                <a href="https://www.infolibre.es/medioambiente/comision-advierte-espana-incumplira-2025-objetivo-reciclaje-nueva-ley-residuos_1_1517924.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Noticia Bruselas
+                </a>
+            </div>
+
+            <!-- Card 4: Transición Energética -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Transición Energética</h3>
+                    <i class="fas fa-solar-panel text-orange-500 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Cambio de fósiles a renovables (cero emisiones).
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Descarbonización</li>
+                        <li>Autoconsumo solar</li>
+                    </ul>
+                </div>
+                <a href="https://www.lavanguardia.com/economia/20250204/10350851/sorpaso-renovables-fotovoltaica-supero-eolica-potencia-instalada-2024.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Récord Solar 2024
+                </a>
+            </div>
+
+             <!-- Card 5: Modelo Alimentario -->
+             <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-600 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Modelo Alimentario</h3>
+                    <i class="fas fa-carrot text-green-600 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Producción segura sin dañar el ecosistema.
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Menos desperdicio</li>
+                        <li>Agricultura Km 0</li>
+                    </ul>
+                </div>
+                <a href="https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-desperdicio-alimentario-en-espa-a-se-ha-reducido-el-4-4---en-2024--hasta-los-1.125-millones-de-kilos/6b13413a-ce02-436a-820a-c1e0f8387cb5" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Datos Desperdicio
+                </a>
+            </div>
+
+            <!-- Card 6: Biodiversidad -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-emerald-400 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Biodiversidad</h3>
+                    <i class="fas fa-paw text-emerald-400 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Protección de especies y ecosistemas.
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Objetivo 30x30</li>
+                        <li>Restauración</li>
+                    </ul>
+                </div>
+                <a href="https://www.wwf.es/?67480/Celebramos-la-aprobacion-definitiva-del-Reglamento-de-Restauracion-de-la-Naturaleza-de-la-Union-Europea" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Ley Restauración
+                </a>
+            </div>
+
+            <!-- Card 7: Estrés Hídrico -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-400 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Estrés Hídrico</h3>
+                    <i class="fas fa-tint text-blue-400 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Demanda de agua superior a la disponible.
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Modernizar regadíos</li>
+                        <li>Aguas residuales</li>
+                    </ul>
+                </div>
+                <a href="https://www.rtve.es/noticias/20240618/cataluna-suaviza-restricciones-agua/16152349.shtml" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Noticia Sequía
+                </a>
+            </div>
+
+            <!-- Card 8: Meteorología Extrema -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-600 card-hover transition-all duration-300 fade-in-section">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-xl text-gray-800">Clima Extremo</h3>
+                    <i class="fas fa-bolt text-purple-600 text-2xl"></i>
+                </div>
+                <p class="text-sm text-gray-600 mb-4 bg-gray-50 p-2 rounded">
+                    Fenómenos severos más frecuentes (DANA, olas calor).
+                </p>
+                <div class="mb-4">
+                    <h4 class="text-xs font-bold text-emerald-600 uppercase mb-1">Objetivos</h4>
+                    <ul class="text-xs text-gray-700 list-disc list-inside">
+                        <li>Alertas tempranas</li>
+                        <li>Resiliencia</li>
+                    </ul>
+                </div>
+                <a href="https://blog.segurostv.es/el-consorcio-ya-ha-pagado-mas-de-3-447-millones-en-indemnizaciones-por-la-dana-de-octubre-de-2024/" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-50 text-emerald-700 text-center py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 hover:text-white transition-colors">
+                    <i class="fas fa-newspaper mr-2"></i> Costes DANA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEPARADOR CON VIDEO DE FONDO O GRADIENTE -->
+    <div class="h-24 bg-gradient-to-r from-emerald-600 to-teal-600 flex items-center justify-center text-white text-xl font-bold tracking-widest uppercase shadow-inner">
+        El Cambio Empieza en la Educación
+    </div>
+
+    <!-- ACTIVIDAD 2: ODS Y RECURSOS -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-2">
+                    <span class="border-b-4 border-teal-500">Actividad 2:</span> ODS 13 - Acción por el Clima
+                </h2>
+                <p class="text-teal-600 font-semibold">Sector: Educación</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-10 items-start">
+                
+                <!-- COLUMNA IZQUIERDA: LISTA DE ACCIONES -->
+                <div class="w-full lg:w-1/2 space-y-6 fade-in-section">
+                    <!-- Action 1 -->
+                    <div class="group bg-green-50 rounded-xl p-5 hover:bg-green-100 transition duration-300 border-l-4 border-green-500 cursor-default">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</span>
+                            <h3 class="font-bold text-lg text-gray-800">Aulas por el Clima</h3>
+                        </div>
+                        <p class="text-gray-600 pl-11">Auditoría energética liderada por alumnos: revisar luces y calefacción para proponer ahorro real.</p>
+                    </div>
+
+                    <!-- Action 2 -->
+                    <div class="group bg-teal-50 rounded-xl p-5 hover:bg-teal-100 transition duration-300 border-l-4 border-teal-500 cursor-default">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-teal-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</span>
+                            <h3 class="font-bold text-lg text-gray-800">Renaturalización del Patio</h3>
+                        </div>
+                        <p class="text-gray-600 pl-11">Más verde, menos cemento. Un aula viva para aprender biología y reducir el calor.</p>
+                    </div>
+
+                    <!-- Action 3 -->
+                    <div class="group bg-sky-50 rounded-xl p-5 hover:bg-sky-100 transition duration-300 border-l-4 border-sky-500 cursor-default">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
+                            <h3 class="font-bold text-lg text-gray-800">Movilidad Sostenible</h3>
+                        </div>
+                        <p class="text-gray-600 pl-11">"Pedibús" o "Bicibús": grupos organizados para ir al centro sin coche.</p>
+                    </div>
+
+                    <!-- Action 4 -->
+                    <div class="group bg-indigo-50 rounded-xl p-5 hover:bg-indigo-100 transition duration-300 border-l-4 border-indigo-500 cursor-default">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-indigo-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</span>
+                            <h3 class="font-bold text-lg text-gray-800">Alfabetización Climática</h3>
+                        </div>
+                        <p class="text-gray-600 pl-11">Integrar problemas locales (sequía, residuos) en asignaturas como Matemáticas o Ética.</p>
+                    </div>
+
+                    <!-- Action 5 -->
+                    <div class="group bg-orange-50 rounded-xl p-5 hover:bg-orange-100 transition duration-300 border-l-4 border-orange-500 cursor-default">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">5</span>
+                            <h3 class="font-bold text-lg text-gray-800">Gestión Residuo Cero</h3>
+                        </div>
+                        <p class="text-gray-600 pl-11">Islas de reciclaje y desayunos sin plásticos de un solo uso.</p>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: RECURSOS VISUALES (IMAGEN Y VIDEO) -->
+                <div class="w-full lg:w-1/2 space-y-8 fade-in-section" style="transition-delay: 200ms;">
+                    
+                    <!-- IMAGEN LOCAL DEL USUARIO -->
+                    <div class="bg-white p-2 rounded-xl shadow-lg border border-gray-100 transform rotate-1 hover:rotate-0 transition duration-500">
+                        <div class="relative overflow-hidden rounded-lg group h-64 md:h-80 bg-gray-100 flex items-center justify-center">
+                            <!-- Esta imagen busca Ej2.png. Si no está, carga una de internet con onerror -->
+                            <img src="Ej2.png" 
+                                 alt="Imagen de la Actividad 2" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1497436072909-60f360e1d4b0?q=80&w=2560&auto=format&fit=crop'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <!-- Mensaje de aviso si no encuentra la imagen local (se muestra via JS en onerror) -->
+                            <div class="absolute inset-0 bg-black/60 items-center justify-center text-white p-4 text-center hidden flex-col">
+                                <p class="font-bold text-yellow-300">Imagen de reserva mostrada</p>
+                                <p class="text-xs mt-2">Para ver tu imagen, guarda "Ej2.png" en la misma carpeta que este archivo HTML.</p>
+                            </div>
+                            
+                            <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent w-full p-4">
+                                <p class="text-white font-bold">Recurso Visual: ODS 13</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VIDEO EMBEBIDO (YouTube) -->
+                    <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
+                        <h4 class="font-bold text-gray-700 mb-3"><i class="fab fa-youtube text-red-600"></i> Video Relacionado</h4>
+                        
+                        <!-- Contenedor del video con fondo gris por si tarda en cargar -->
+                        <div class="relative pb-[56.25%] h-0 rounded-lg overflow-hidden bg-gray-200">
+                            <!-- URL limpia y uso de youtube-nocookie para evitar bloqueos en local -->
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full" 
+                                src="https://www.youtube-nocookie.com/embed/bNW9jA4vCqE" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mt-3">
+                            <p class="text-xs text-gray-500">Video explicativo: Acciones Sostenibles</p>
+                            <!-- Botón de respaldo por si el navegador bloquea el iframe localmente -->
+                            <a href="https://www.youtube.com/watch?v=bNW9jA4vCqE" target="_blank" rel="noopener noreferrer" class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded hover:bg-red-200 transition">
+                                <i class="fas fa-external-link-alt"></i> Ver en YouTube si no carga
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-900 text-emerald-100 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-bold text-lg mb-2">Cuaderno Digital de Sostenibilidad</p>
+            <p class="text-sm opacity-80 mb-4">Creado para la asignatura: Sostenibilidad aplicada al sistema productivo</p>
+            <div class="border-t border-emerald-800 pt-4 flex justify-center gap-4 text-sm">
+                <span>Ana Maria da Cunha Goncalves</span>
+                <span>•</span>
+                <span>2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT PARA ANIMACIONES -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Animación solo una vez
+                    }
+                });
+            }, observerOptions);
+
+            const sections = document.querySelectorAll('.fade-in-section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
